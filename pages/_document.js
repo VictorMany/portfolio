@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <title>my portfolio</title>
+                    <title>Victor Fuentes</title>
                     <meta name="description" content="Victor Manuel Portfolio Website" />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css" />
                 </Head>
@@ -25,6 +25,7 @@ export default class MyDocument extends Document {
                     <Main></Main>
                     <NextScript></NextScript>
                 </body>
+
             </Html>
         )
     }

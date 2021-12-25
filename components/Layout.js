@@ -16,17 +16,31 @@ const Layout = ({ children, footer = true, dark = false, nav = true }) => {
         }
     }, [])
     return (
-        <div className={dark ? 'bg-dark' : 'bg-light'}>
+        <div className={dark ? 'bg-dark' : ''} >
             <Navbar nav={nav} />
-            <main className="container py-4" style={{ width: "70%" }}>
+            <main className="container py-4 col-12 col-md-8">
                 {children}
             </main>
             {
                 footer && (<footer className="bg-dark text-light text-center">
                     <div className="container p-4">
-                        <h3>Portafolio de Victor Manuel Velazquez Fuentes</h3>
-                        <p>2000-{new Date().getFullYear()}</p>
-                        <p>&copy;Todos los derechos reservados</p>
+                        <div className='row'>
+                            <div className="col-md-7 col-12">
+                                <h3>Portafolio de Victor Manuel Velazquez Fuentes</h3>
+                                <p>2000-{new Date().getFullYear()}</p>
+                                <p>&copy;Todos los derechos reservados</p>
+
+                            </div>
+                            <div className="col-md-5 col-12 bg-light text-dark p-3" style={{borderRadius: '0.5rem'}}>
+                                <div className="row">
+                                    <h3>Contácto</h3>
+                                    <p>victor.velazfuentez@gmail.com</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
                     </div>
                 </footer>
                 )

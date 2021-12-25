@@ -19,3 +19,19 @@ div#__next>div {
 .overflow .card-img-top:hover {
     transform: scale(1.8);
 }
+
+#contenedor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+}
+
+/* Estilos móvil/celular */
+@media all and (min-width: 701px) {
+    .pad {
+        padding-left: 0rem;
+    }
+}
+
