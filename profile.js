@@ -65,8 +65,8 @@ export const projects = [{
     description: 'Página web de publicidad para software BMS desarrollada con Bootstrap',
     image: 'bms.png'
 }, {
-    name: 'CRUD Ángular',
-    description: 'CRUD completo desarrollado con Ángular y firebase',
+    name: 'CRUD Angular',
+    description: 'CRUD completo desarrollado con Angular y firebase',
     image: ''
 }, {
     name: '...',
