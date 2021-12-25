@@ -26,14 +26,14 @@ const Layout = ({ children, footer = true, dark = false, nav = true }) => {
                     <div className="container p-4">
                         <div className='row'>
                             <div className="col-md-7 col-12">
-                                <h3>Portafolio de Victor Manuel Velazquez Fuentes</h3>
+                                <h3>Portafolio de Víctor Manuel Velázquez Fuentes</h3>
                                 <p>2000-{new Date().getFullYear()}</p>
                                 <p>&copy;Todos los derechos reservados</p>
 
                             </div>
                             <div className="col-md-5 col-12 bg-light text-dark p-3" style={{borderRadius: '0.5rem'}}>
                                 <div className="row">
-                                    <h3>Contácto</h3>
+                                    <h3>Contacto</h3>
                                     <p>victor.velazfuentez@gmail.com</p>
                                 </div>
 

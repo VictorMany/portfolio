@@ -155,58 +155,58 @@ const Index = () => (
                         </div>
                         {
                             projects.map(({ name, image, description }, i) => (
-                                <div className="col-md-4 p-2" key={i}>
-                                    <div className="card h-100">
-                                        <div className="overflow">
-                                            <img src={`/${image}`} alt="" className="card-img-top" />
-                                        </div>
-                                        <div className="card-body">
-                                            <h3>{name}</h3>
-                                            <p>{description}</p>
-                                            <a href="#!">Know more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        {/**Fourth section */}
-
-        <section className="row mt-3">
-            <div className="col-md-12 col-12">
-                <div className="card card-body bg-dark">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <h1 className="text-center text-light">
-                                Cursos
-                            </h1>
+                                <div className="col-md-4 p-2" key={i} style={{ maxHeight: 490 }}>
+                        <div className="card h-100">
+                            <div className="overflow">
+                                <img src={`/${image}`} alt="" className="card-img-top" />
+                            </div>
+                            <div className="card-body">
+                                <h3>{name}</h3>
+                                <p>{description}</p>
+                                <a href="#!">Know more</a>
+                            </div>
                         </div>
-                        {
-                            cursos.map(({ name, image, description, link }, i) => (
-                                <div className="col-md-4 p-2" key={i}>
-                                    <div className="card h-100">
-                                        <div className="card-body">
-                                            <h3>{name}</h3>
-                                            <p>{description}</p>
-
-                                            <div className='mt-5'>
-                                                <a href={link} className='position-absolute start-0 bottom-0 m-2 btn btn-secondary-outline btn-sm' target="_blank">Ver certificado</a>
-                                                <img className='position-absolute bottom-0 end-0 m-1' style={{ height: 50 }} src={`/${image}`} />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))
-                        }
                     </div>
+                    ))
+                        }
                 </div>
             </div>
+            </div>
         </section>
+
+
+        {/**Fourth section */ }
+
+<section className="row mt-3">
+    <div className="col-md-12 col-12">
+        <div className="card card-body bg-dark">
+            <div className="row">
+                <div className="col-md-12">
+                    <h1 className="text-center text-light">
+                        Cursos
+                    </h1>
+                </div>
+                {
+                    cursos.map(({ name, image, description, link }, i) => (
+                        <div className="col-md-4 p-2" key={i}>
+                            <div className="card h-100">
+                                <div className="card-body">
+                                    <h3>{name}</h3>
+                                    <p>{description}</p>
+
+                                    <div className='mt-5'>
+                                        <a href={link} className='position-absolute start-0 bottom-0 m-2 btn btn-secondary-outline btn-sm' target="_blank">Ver certificado</a>
+                                        <img className='position-absolute bottom-0 end-0 m-1' style={{ height: 50 }} src={`/${image}`} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</section>
 
     </Layout >
 )

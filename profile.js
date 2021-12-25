@@ -37,16 +37,16 @@ export const skills = [{
 
 
 export const experiences = [{
-    title: 'Freelance',
+    title: 'Freelancer',
     from: 'Junio 2020',
     to: 'Junio 2021',
-    description: 'Desarrollo frontend de sistema web desarrollado en Quasar Framework. Se trata de un CMMS dirigido a los departamentos de Ingenieria Biomedica para poder aumentar su productividad ayudando a generar reportes y mantenimientos a los activos biomedicos'
+    description: 'Desarrollo frontend de sistema web desarrollado en Quasar Framework. Se trata de un CMMS dirigido a los departamentos de Ingeniería Biomédica para poder aumentar su productividad ayudando a generar reportes y mantenimientos a los activos biomédicos'
 },
 {
     title: 'Practicante de ingeniero de Software en Valadevs',
     from: 'Junio 2021',
     to: 'Diciembre 2021',
-    description: 'Desarrollo frontend y backend, asi como mantenimiento de plataforma desarrollada en PHP'
+    description: 'Desarrollo frontend y backend para proyectos desarrollados con PHP, bases de datos con MySQL'
 },
 
 ]
@@ -127,7 +127,7 @@ export const cursos = [{
 {
     name: 'Primeros auxilios',
     description: '6 acciones para salvar una vida (Cruz Roja Mexicana)',
-    image: 'cursos/mongo.jpeg',
+    image: 'cursos/cruzroja.jpeg',
     link: 'https://drive.google.com/file/d/1zg-VmlX88U2F8XgRd4_Q1Y3aqElLFiBE/view'
 
 },
