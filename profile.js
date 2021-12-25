@@ -23,13 +23,13 @@ export const skills = [{
 },
 {
     skill: 'React',
-    percentage: 60,
+    percentage: 50,
     image: 'logo/react.svg'
 
 },
 {
     skill: 'Angular',
-    percentage: 60,
+    percentage: 40,
     image: 'logo/angular.svg'
 
 },
@@ -138,54 +138,54 @@ export const cursos = [{
 
 export const tecnologies = [{
     skill: 'Firebase',
-    percentage: 85,
+    percentage: 60,
     image: 'https://media-exp1.licdn.com/dms/image/C4D0BAQH4mWlWY2w9VQ/company-logo_100_100/0/1519919471350?e=1648684800&v=beta&t=IzpY5IHMeJC4Lual8UkyzkCxRleWustPFwAHQNuIvwA'
 },
 {
     skill: 'GIT',
-    percentage: 80,
+    percentage: 70,
     image: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFY3BGhoMwEEA/company-logo_100_100/0/1626195279622?e=1648684800&v=beta&t=Zu0K6v_jtqRs1uxN2dnVmMKy6deT87UJcjcaU29Eytk'
 
 },
 {
     skill: 'MongoDB',
-    percentage: 60,
+    percentage: 25,
     image: 'https://media-exp1.licdn.com/dms/image/C4D0BAQFKe8PwqzyHyA/company-logo_100_100/0/1635171226731?e=1648684800&v=beta&t=obKhGG4i2J-bp9zxXbxGE7b0WXUcqX8Qxu15D2WOnUI'
 
 },
 {
     skill: 'MySQL',
-    percentage: 70,
+    percentage: 50,
     image: 'https://media-exp1.licdn.com/dms/image/C4D0BAQHB1VZq-qN8Lg/company-logo_100_100/0/1592502823650?e=1648684800&v=beta&t=bUaeCwdF_HxmmuHf9vLB8w2Rwrsf3HBU2O8X6v5xDIg'
 
 },
 {
     skill: 'SQL Server',
-    percentage: 60,
+    percentage: 40,
     image: 'https://media-exp1.licdn.com/dms/image/C510BAQFpEKT9xbJkpg/company-logo_200_200/0/1533695204875?e=1648684800&v=beta&t=8MVqlpL8_KuSlgJdR9nd5sTbU6wHXwlkdD4TyKE-F5c'
 
 },
 {
     skill: 'NEXT JS',
-    percentage: 60,
+    percentage: 20,
     image: 'https://media-exp1.licdn.com/dms/image/C560BAQE0zeTdl6PQtA/company-logo_100_100/0/1618724397992?e=1648684800&v=beta&t=zLdW6BupEhQge6DtnEGfCxEuvcVzWbhphXERgqQOBS0'
 
 },
 {
     skill: 'React Native',
-    percentage: 60,
+    percentage: 30,
     image: 'https://media-exp1.licdn.com/dms/image/C4D0BAQETV3PnkE_rCQ/company-logo_200_200/0/1568274402749?e=1648684800&v=beta&t=OltN6LhRDsfKK_2AUtP63YQgUctEkED4ILuP7wgRYok'
 
 },
 {
     skill: 'Visual Studio Code',
-    percentage: 60,
+    percentage: 80,
     image: 'cursos/vscode.png'
 
 },
 {
     skill: 'Bootstrap',
-    percentage: 60,
+    percentage: 50,
     image: 'https://media-exp1.licdn.com/dms/image/C560BAQGy6HfZ0i7mlA/company-logo_100_100/0/1628861565317?e=1648684800&v=beta&t=NQMLm042Kb3QeknLKBz0KJ8rW0bhimMIUIxIEw8d6nw'
 
 },]
