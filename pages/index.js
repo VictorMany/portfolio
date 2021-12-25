@@ -66,13 +66,13 @@ const Index = () => (
                 {/* Experience */}
                 <div className="card bg-light animate__animated animate__fadeInRight h-100" >
                     <div className="card-body">
-                        <h1>Experience</h1>
+                        <h3>Experiencia</h3>
 
                         <ul>
                             {/* List Item Experience */}
                             {experiences.map(({ title, from, to, description }, index) => (
                                 <li key={index}>
-                                    <h3>{title}</h3>
+                                    <h4>{title}</h4>
                                     <h5>
                                         {from} {to ? `- ${to}` : "- current"}
                                     </h5>
@@ -83,6 +83,24 @@ const Index = () => (
                             ))}
                         </ul>
 
+                        <h3>Idiomas</h3>
+
+                        <ul>
+
+                            <li>
+                                <h5>Español</h5>
+                                <p>
+                                    Competencia bilingüe o nativa
+                                </p>
+                            </li>
+                            <li>
+                                <h5>Inglés</h5>
+                                <p>
+                                    Competencia básica limitada
+                                </p>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -156,57 +174,57 @@ const Index = () => (
                         {
                             projects.map(({ name, image, description }, i) => (
                                 <div className="col-md-4 p-2" key={i} style={{ maxHeight: 490 }}>
-                        <div className="card h-100">
-                            <div className="overflow">
-                                <img src={`/${image}`} alt="" className="card-img-top" />
-                            </div>
-                            <div className="card-body">
-                                <h3>{name}</h3>
-                                <p>{description}</p>
-                                <a href="#!">Know more</a>
-                            </div>
-                        </div>
-                    </div>
-                    ))
+                                    <div className="card h-100">
+                                        <div className="overflow">
+                                            <img src={`/${image}`} alt="" className="card-img-top" />
+                                        </div>
+                                        <div className="card-body">
+                                            <h3>{name}</h3>
+                                            <p>{description}</p>
+                                            <a href="#!">Know more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
                         }
+                    </div>
                 </div>
-            </div>
             </div>
         </section>
 
 
-        {/**Fourth section */ }
+        {/**Fourth section */}
 
-<section className="row mt-3">
-    <div className="col-md-12 col-12">
-        <div className="card card-body bg-dark">
-            <div className="row">
-                <div className="col-md-12">
-                    <h1 className="text-center text-light">
-                        Cursos
-                    </h1>
-                </div>
-                {
-                    cursos.map(({ name, image, description, link }, i) => (
-                        <div className="col-md-4 p-2" key={i}>
-                            <div className="card h-100">
-                                <div className="card-body">
-                                    <h3>{name}</h3>
-                                    <p>{description}</p>
+        <section className="row mt-3">
+            <div className="col-md-12 col-12">
+                <div className="card card-body bg-dark">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <h1 className="text-center text-light">
+                                Cursos
+                            </h1>
+                        </div>
+                        {
+                            cursos.map(({ name, image, description, link }, i) => (
+                                <div className="col-md-4 p-2" key={i}>
+                                    <div className="card h-100">
+                                        <div className="card-body">
+                                            <h3>{name}</h3>
+                                            <p>{description}</p>
 
-                                    <div className='mt-5'>
-                                        <a href={link} className='position-absolute start-0 bottom-0 m-2 btn btn-secondary-outline btn-sm' target="_blank">Ver certificado</a>
-                                        <img className='position-absolute bottom-0 end-0 m-1' style={{ height: 50 }} src={`/${image}`} />
+                                            <div className='mt-5'>
+                                                <a href={link} className='position-absolute start-0 bottom-0 m-2 btn btn-secondary-outline btn-sm' target="_blank">Ver certificado</a>
+                                                <img className='position-absolute bottom-0 end-0 m-1' style={{ height: 50 }} src={`/${image}`} />
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    ))
-                }
+                            ))
+                        }
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
     </Layout >
 )
