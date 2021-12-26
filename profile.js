@@ -71,7 +71,7 @@ export const projects = [{
     name: 'CRUD Angular',
     description: 'CRUD completo desarrollado con Angular y firebase',
     image: 'crud.png',
-    link: 'https://google-news-angular.vercel.app/news/today'
+    link: 'https://crud-angular-lovat.vercel.app/news/today'
 }, {
     name: '...',
     description: '...',
