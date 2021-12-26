@@ -11,7 +11,7 @@ const Index = () => (
             <div className="col-md-12 col-12">
                 <div className="card card-body bg-secondary bg-dark text-light">
                     <div className="row">
-                        <div className="col-md-3">
+                        <div className="col-md-3 p-3">
                             <img width="100%" src="/foto.png" alt="" />
                         </div>
                         <div className="col-md-9">
@@ -172,8 +172,8 @@ const Index = () => (
                             </h1>
                         </div>
                         {
-                            projects.map(({ name, image, description }, i) => (
-                                <div className="col-md-4 p-2" key={i} style={{ maxHeight: 490 }}>
+                            projects.map(({ name, image, description, link }, i) => (
+                                <div className="col-md-4 p-2 height-card" key={i}>
                                     <div className="card h-100">
                                         <div className="overflow">
                                             <img src={`/${image}`} alt="" className="card-img-top" />
@@ -181,7 +181,7 @@ const Index = () => (
                                         <div className="card-body">
                                             <h3>{name}</h3>
                                             <p>{description}</p>
-                                            <a href="#!">Know more</a>
+                                            <a href={link} target='_blank'>Saber más</a>
                                         </div>
                                     </div>
                                 </div>

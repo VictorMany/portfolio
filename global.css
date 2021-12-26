@@ -3,6 +3,11 @@
     overflow: hidden;
 }
 
+.card-body {
+    height: auto;
+
+}
+
 body,
 html,
 body>div:first-child,
@@ -28,10 +33,25 @@ div#__next>div {
     background-color: red;
 }
 
+.height-card {
+    max-height: 480px;
+}
+
 /* Estilos móvil/celular */
 @media all and (min-width: 701px) {
     .pad {
         padding-left: 0rem;
     }
+
 }
 
+@media all and (max-width: 701px) {
+    .height-card {
+        max-height: 500px;
+    }
+
+    .overflow {
+        height: 50%;
+        overflow: hidden;
+    }
+}
