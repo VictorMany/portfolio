@@ -30,10 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/github": [
+    "/linkedIn": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/github.js"
+      "static/chunks/pages/linkedIn.js"
     ]
   },
   "ampFirstPages": []
