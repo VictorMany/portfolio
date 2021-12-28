@@ -234,7 +234,7 @@ const Index = () => (
             </div>
         </section>
 
-        <div className="card card-body bg-dark p-2 d-flex justify-content-center mt-2" >
+        <div className="bg-dark p-2 d-grid d-md-flex justify-content-center mt-2" >
             <button className="btn btn-primary" onClick={saveFile}>Descargar CV en PDF</button>
         </div>
 
