@@ -73,9 +73,10 @@ export const projects = [{
     image: 'crud.png',
     link: 'https://crud-angular-lovat.vercel.app/news/today'
 }, {
-    name: '...',
-    description: '...',
-    image: ''
+    name: 'CRUD NextJS',
+    description: 'CRUD completo desarrollado con NextJS y MongoDB',
+    image: 'mongo.png',
+    link: 'https://vicvoc.vercel.app'
 }, {
     name: '...',
     description: '...',
