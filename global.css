@@ -20,6 +20,11 @@ div#__next>div {
     transition: all 0.2s ease-in-out;
 }
 
+.card-img-top{
+    height: 150px;
+    object-fit: cover;
+}
+
 .overflow .card-img-top:hover {
     transform: scale(1.8);
 }
