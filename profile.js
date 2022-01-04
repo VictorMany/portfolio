@@ -64,17 +64,17 @@ export const projects = [{
     link: 'https://victormany.github.io/servicio_becario_math_app/dist/spa/#/'
 }, {
     name: 'BMS',
-    description: 'Página web de publicidad para software BMS desarrollada con Bootstrap',
+    description: 'Página web estática de publicidad para software BMS desarrollada con HTML, CSS, Javascript y clases de Bootstrap',
     image: 'bms.png',
     link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
 }, {
-    name: 'CRUD Angular',
-    description: 'CRUD completo desarrollado con Angular y firebase',
+    name: 'App de Notas',
+    description: 'CRUD completo desarrollado con AngularJS y firebase',
     image: 'crud.png',
     link: 'https://crud-angular-lovat.vercel.app/news/today'
 }, {
-    name: 'CRUD NextJS',
-    description: 'CRUD completo desarrollado con NextJS y MongoDB',
+    name: 'Preview link Vicvoc',
+    description: 'CRUD completo desarrollado con NextJS y MongoDB para guardar sitios web interesantes',
     image: 'mongo.png',
     link: 'https://vicvoc.vercel.app'
 }, {
