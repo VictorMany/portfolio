@@ -25,7 +25,7 @@ const Index = () => (
                         <div className="col-md-9">
                             <h1>Victor Manuel Fuentes</h1>
                             <h3>Frontend Developer</h3>
-                            <p style={{ color: '#928F8C' }}>Estudiante de Ingeniería en Software y Sistemas Computacionales en la Universidad de La Salle Bajío</p>
+                            <p style={{ color: '#928F8C' }}>Estudiante de Ingeniería de Software y Sistemas Computacionales en la Universidad de La Salle Bajío</p>
                             <a href="https://www.linkedin.com/in/victor-manuel-velazquez-fuentes-bab088156/" target='_blank'>Vee mi perfil de LinkedIn</a>
                         </div>
                     </div>
