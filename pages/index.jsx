@@ -184,7 +184,10 @@ const Index = () => (
                                 <div className="col-md-4 p-2 height-card" key={i}>
                                     <div className="card h-100">
                                         <div className="overflow">
-                                            <img src={`/${image}`} alt="" className="card-img-top" />
+                                            {image ? (
+                                                <img src={`/${image}`} alt="..." className="card-img-top" />) : <></>
+
+                                            }
                                         </div>
                                         <div className="card-body">
                                             <h3>{name}</h3>
