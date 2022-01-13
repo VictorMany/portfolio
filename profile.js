@@ -53,35 +53,35 @@ export const experiences = [{
 
 
 export const projects = [{
-    name: 'Aprendiendo Inglés',
-    description: 'Aplicacion móvil y web para que los niños puedan aprender inglés básico desarrollada con Quasar framework',
-    image: 'le.png',
-    link: 'https://victormany.github.io/LearningEnglish/dist/spa/#/'
-}, {
-    name: 'Aprendiendo matemáticas',
-    description: 'Aplicacion móvil y web para que los niños puedan aprender matemáticas básicas desarrollada con Quasar framework',
-    image: 'mat.png',
-    link: 'https://victormany.github.io/servicio_becario_math_app/dist/spa/#/'
-}, {
-    name: 'BMS',
-    description: 'Página web estática de publicidad para software BMS desarrollada con HTML, CSS, Javascript y clases de Bootstrap',
-    image: 'bms.png',
-    link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
-}, {
-    name: 'App de Notas',
-    description: 'CRUD completo desarrollado con AngularJS y firebase',
-    image: 'crud.png',
-    link: 'https://crud-angular-lovat.vercel.app/news/today'
-}, {
-    name: 'Preview link Vicvoc',
-    description: 'CRUD completo desarrollado con NextJS y MongoDB para guardar sitios web interesantes',
-    image: 'mongo.png',
-    link: 'https://vicvoc.vercel.app'
-}, {
-    name: '...',
-    description: '...',
-    image: ''
-}
+        name: 'Preview link Vicvoc',
+        description: 'CRUD completo desarrollado con NextJS y MongoDB para guardar sitios web interesantes',
+        image: 'mongo.png',
+        link: 'https://vicvoc.vercel.app'
+    }, {
+        name: 'Aprendiendo Inglés',
+        description: 'Aplicacion móvil y web para que los niños puedan aprender inglés básico desarrollada con Quasar framework',
+        image: 'le.png',
+        link: 'https://victormany.github.io/LearningEnglish/dist/spa/#/'
+    }, {
+        name: 'Aprendiendo matemáticas',
+        description: 'Aplicacion móvil y web para que los niños puedan aprender matemáticas básicas desarrollada con Quasar framework',
+        image: 'mat.png',
+        link: 'https://victormany.github.io/servicio_becario_math_app/dist/spa/#/'
+    }, {
+        name: 'BMS',
+        description: 'Página web estática de publicidad para software BMS desarrollada con HTML, CSS, Javascript y clases de Bootstrap',
+        image: 'bms.png',
+        link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
+    }, {
+        name: 'App de Notas',
+        description: 'CRUD completo desarrollado con AngularJS y firebase',
+        image: 'crud.png',
+        link: 'https://crud-angular-lovat.vercel.app/news/today'
+    }, {
+        name: '...',
+        description: '...',
+        image: ''
+    }
 ]
 
 
