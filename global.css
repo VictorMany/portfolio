@@ -20,7 +20,7 @@ div#__next>div {
     transition: all 0.2s ease-in-out;
 }
 
-.card-img-top{
+.card-img-top {
     height: 150px;
     object-fit: cover;
 }
@@ -58,4 +58,15 @@ div#__next>div {
         height: 50%;
         overflow: hidden;
     }
+}
+
+.image-blurred-edge {
+    background-image: url('/foto.png');
+    background-position: center;
+    background-size: 220px;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 200px;
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    box-shadow: 0 0 8px 10px rgb(0, 0, 0) inset;
 }

@@ -18,7 +18,7 @@ const Layout = ({ children, footer = true, dark = false, nav = true }) => {
     return (
         <div className={dark ? 'bg-dark' : ''} >
             <Navbar nav={nav} />
-            <main className="container py-4 col-12 col-md-8">
+            <main className="container py-2 col-12 col-md-8">
                 {children}
             </main>
             {
@@ -26,14 +26,14 @@ const Layout = ({ children, footer = true, dark = false, nav = true }) => {
                     <div className="container p-4">
                         <div className='row'>
                             <div className="col-md-7 col-12">
-                                <h3>Portafolio de Víctor Manuel Velázquez Fuentes</h3>
+                                <h3>Víctor's personal website</h3>
                                 <p>2000-{new Date().getFullYear()}</p>
-                                <p>&copy;Todos los derechos reservados</p>
+                                <p>&copy;All rights reserved</p>
 
                             </div>
-                            <div className="col-md-5 col-12 bg-light text-dark p-3" style={{borderRadius: '0.5rem'}}>
+                            <div className="col-md-5 col-12 bg-light text-dark p-3" style={{ borderRadius: '0.5rem' }}>
                                 <div className="row">
-                                    <h3>Contacto</h3>
+                                    <h3>Contact me</h3>
                                     <p>victor.velazfuentez@gmail.com</p>
                                 </div>
 
