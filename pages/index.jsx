@@ -49,7 +49,7 @@ const Index = () => {
                     </div>
                     <div className="card card-body bg-secondary bg-black text-light">
                         <div className="row">
-                            <div className="col-md-4 col-12 d-flex justify-content-center align-items-center">
+                            <div className="col-md-4 p-3 col-12 d-flex justify-content-center align-items-center">
                                 <div className="image-blurred-edge"></div>
                             </div>
                             <div className="col-md-8 col-12 ">
