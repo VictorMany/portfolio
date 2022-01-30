@@ -55,7 +55,7 @@ const Index = () => {
                             <div className="col-md-8 col-12 ">
                                 <h1>Victor Manuel Fuentes</h1>
                                 <h3>Frontend Developer</h3>
-                                <p style={{ color: '#928F8C' }}>{englishMode ? 'Estudiante de Ingeniería de Software y Sistemas Computacionales en la Universidad de La Salle Bajío' : 'Student of Software Engineering and Computer Systems at the University of La Salle Bajío'}</p>
+                                <p style={{ color: '#928F8C' }}>{englishMode ? 'Estudiante de Ingeniería de Software y Sistemas Computacionales en la Universidad de La Salle Bajío' : 'Student of Software Engineering and Computer Systems at the University De La Salle Bajío'}</p>
                                 <a href="https://www.linkedin.com/in/victor-manuel-velazquez-fuentes-bab088156/" target='_blank'>{englishMode ? 'Vee mi perfil de LinkedIn' : 'linkedin profile'}</a>
                             </div>
                         </div>
