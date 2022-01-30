@@ -43,14 +43,14 @@ const Index = () => {
             {/**Header card */}
             < header className="row" >
                 <div className="col-md-12 col-12">
-                    <div className="form-check form-switch d-flex justify-content-end m-1 mb-2">
+                    <div className="form-check form-switch d-flex justify-content-end m-1 mb-2 ">
                         <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
                         <label className="form-check-label">SP/EN</label>
                     </div>
                     <div className="card card-body bg-secondary bg-black text-light">
                         <div className="row">
-                            <div className="col-md-4 p-3 col-12 d-flex justify-content-center">
-                                <div class="image-blurred-edge"></div>
+                            <div className="col-md-4 col-12 d-flex justify-content-center align-items-center">
+                                <div className="image-blurred-edge"></div>
                             </div>
                             <div className="col-md-8 col-12 ">
                                 <h1>Victor Manuel Fuentes</h1>
@@ -267,7 +267,7 @@ const Index = () => {
             </section>
 
             <div className="bg-black p-2 d-grid d-md-flex justify-content-center mt-2" >
-                {englishMode ? <button className="btn bg-primary shadow-none text-white"  onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> : <button className="btn bg-primary shadow-none text-white" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
+                {englishMode ? <button className="btn bg-primary shadow-none text-white" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> : <button className="btn bg-primary shadow-none text-white" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
             </div>
 
         </Layout >
