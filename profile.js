@@ -1,3 +1,5 @@
+// https://icons8.com/icons
+
 export const skills = [{
     skill: 'Javascript',
     percentage: 85,
@@ -33,6 +35,12 @@ export const skills = [{
     image: 'logo/angular.svg'
 
 },
+{
+    skill: 'Vue JS',
+    percentage: 50,
+    image: 'logo/vue.svg'
+
+},
 ]
 
 export const languages = [
@@ -59,30 +67,45 @@ export const experiences = [{
     title: 'Freelancer',
     from: 'Junio 2020',
     to: 'Junio 2021',
+    where: 'León, Gto. (Remoto)',
     description: 'Desarrollo frontend de sistema web desarrollado en Quasar Framework. Se trata de un CMMS dirigido a los departamentos de Ingeniería Biomédica para poder aumentar su productividad ayudando a generar reportes y mantenimientos a los activos biomédicos'
 },
 {
     title: 'Practicante de ingeniero de Software en Valadevs',
     from: 'Junio 2021',
     to: 'Diciembre 2021',
+    where: 'León, Gto. (Híbrido)',
     description: 'Desarrollo frontend y backend para proyectos desarrollados con PHP, bases de datos con MySQL'
+},
+{
+    title: 'Frontend developer en Nextline',
+    from: 'Enero 2022',
+    where: 'Guadalajara, Jalisco. (Remoto)',
+    description: 'Creación de interfaces y componentes en Vue JS, uso de endpoints para conexión a backend con Axios, testing manual de funcionalidad y uso de manejador de versiones Git'
 },
 
 ]
 
 export const ENexperiences = [{
-    title: 'Freelancer',
-    from: 'June 2020',
-    to: 'June 2021',
-    description: 'Frontend development of WEB system in Quasar Framework. It is a CMMS aimed at Biomedical Engineering departments to increase their productivity by helping to generate reports and maintenance for biomedical assets.'
-},
-{
-    title: 'Software engineer intern in Valadevs',
-    from: 'June 2021',
-    to: 'January 2022',
-    description: 'Frontend and backend development for projects developed with PHP, databases with MySQL'
-},
-
+        title: 'Freelancer',
+        from: 'June 2020',
+        to: 'June 2021',
+        where: 'León, Gto. (Remote)',
+        description: 'Frontend development of WEB system in Quasar Framework. It is a CMMS aimed at Biomedical Engineering departments to increase their productivity by helping to generate reports and maintenance for biomedical assets.'
+    },
+    {
+        title: 'Software engineer intern at Valadevs',
+        from: 'June 2021',
+        to: 'January 2022',
+        where: 'León, Gto. (Hybrid)',
+        description: 'Frontend and backend development for projects developed with PHP, databases with MySQL'
+    },
+    {
+        title: 'Frontend developer at Nextline',
+        from: 'January 2022',
+        where: 'Guadalajara, Jalisco. (Remote)',
+        description: 'Creation of interfaces and components in Vue JS, use of endpoints for connection to backend with Axios, manual testing of functionality and use of git version manager'
+    },
 ]
 
 export const projects = [{
@@ -107,14 +130,15 @@ export const projects = [{
     link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
 }, {
     name: 'App de Notas',
-    description: 'CRUD completo desarrollado con AngularJS y firebase',
+    description: 'CRUD completo desarrollado con Angular JS y firebase',
     image: 'crud.png',
     link: 'https://crud-angular-lovat.vercel.app/news/today'
 }, {
-    name: '...',
-    description: '...',
-    image: ''
-}
+    name: 'To do',
+    description: 'Frontend desarrollado con Vue JS y Vuetify',
+    image: 'notesvue.png',
+    link: 'https://to-do-beryl.vercel.app'
+},
 ]
 
 export const ENprojects = [{
@@ -138,15 +162,16 @@ export const ENprojects = [{
     image: 'bms.png',
     link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
 }, {
-    name: 'TO DO App',
+    name: 'To do App',
     description: 'Complete CRUD developed with Angular JS and Firebase',
     image: 'crud.png',
     link: 'https://crud-angular-lovat.vercel.app/news/today'
-}, {
-    name: '...',
-    description: '...',
-    image: ''
-}
+},{
+    name: 'To do App',
+    description: 'Frontend developed with Vue JS and Vuetify',
+    image: 'notesvue.png',
+    link: 'https://to-do-beryl.vercel.app'
+},
 ]
 
 export const cursos = [{

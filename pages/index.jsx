@@ -45,7 +45,7 @@ const Index = () => {
                 <div className="col-md-12 col-12">
                     <div className="form-check form-switch d-flex justify-content-end m-1 mb-2 ">
                         <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
-                        <label className="form-check-label">SP/EN</label>
+                        <label className="form-check-label ps-1"><strong>SP/EN</strong></label>
                     </div>
                     <div className="card card-body bg-secondary bg-black text-light">
                         <div className="row">
@@ -67,7 +67,7 @@ const Index = () => {
             {/**Second sesion */}
             < section className="row" >
                 <div className="col-md-4 py-2 col-12">
-                    <div className="card bg-light animate__animated animate__fadeInLeft">
+                    <div className="card bg-light animate__animated animate__fadeInLeft h-100">
                         <div className="card-body">
                             <h1>Skills</h1>
 
@@ -104,16 +104,19 @@ const Index = () => {
                     {/* Experience */}
                     <div className="card bg-light animate__animated animate__fadeInRight h-100" >
                         <div className="card-body">
-                            {englishMode ? <h3>Experiencia</h3> : <h3>Work Experience</h3>}
-                            <ul>
+                            {englishMode ? <h1>Experiencia</h1> : <h1>Work Experience</h1>}
+                            <ul className="pt-3">
                                 {/* List Item Experience */}
                                 {
-                                    Experiences.map(({ title, from, to, description }, index) => (
+                                    Experiences.map(({ title, from, to, description, where }, index) => (
                                         <li key={index}>
-                                            <h4>{title}</h4>
+                                            <h4 className="text-red">{title}</h4>
                                             <h5>
-                                                {from} {to ? `- ${to}` : "- current"}
+                                                {from} {to ? `- ${to}` : `${!englishMode ? "- I currently work here" : " - Actualmente trabajo aquí" }`}
                                             </h5>
+                                            <h6>
+                                                {where}
+                                            </h6>
                                             <p>
                                                 {description}
                                             </p>
@@ -213,13 +216,12 @@ const Index = () => {
                                             <div className="overflow">
                                                 {image ? (
                                                     <img src={`/${image}`} alt="..." className="card-img-top" />) : <></>
-
                                                 }
                                             </div>
                                             <div className="card-body">
                                                 <h3>{name}</h3>
-                                                <p>{description}</p>
-                                                <a href={link} target='_blank'>{englishMode ? 'Saber más' : 'Know more'}</a>
+                                                <p className="pb-2">{description}</p>
+                                                <a href={link} target='_blank' className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1'>{englishMode ? 'Saber más' : 'Know more'}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -253,7 +255,7 @@ const Index = () => {
                                                 <p>{description}</p>
 
                                                 <div className='mt-5'>
-                                                    <a href={link} className='position-absolute start-0 bottom-0 m-2 btn btn-secondary-outline btn-sm' target="_blank">{englishMode ? 'Ver certificado' : 'Proof of completion'}</a>
+                                                    <a href={link} className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1' target="_blank">{englishMode ? 'Ver certificado' : 'Proof of completion'}</a>
                                                     <img className='position-absolute bottom-0 end-0 m-1' style={{ height: 50 }} src={`/${image}`} />
                                                 </div>
                                             </div>
