@@ -17,7 +17,19 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <meta name="description" content="Victor Manuel Portfolio Website" />
+                    <meta property="og:url" content="https://portfolio-vic-projects.vercel.app" />
+                    <meta property="og:type" content="website" />
+                    <meta
+                        property="og:title"
+                        content="Víctor's personal website"
+                    />
+                    <meta
+                        property="og:description"
+                        content="Information contact, projects and courses
+                        2000-2022 
+                        ©All rights reserved"
+                    />
+                    <meta property="og:image" content={"/imagePL.png"} />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css" />
                 </Head>
                 <body>
