@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
                         2000-2022 
                         ©All rights reserved"
                     />
-                    <meta property="og:image" content={"blob:https://vercel.com/a8241996-715a-4249-9dce-27a2b0bcda1a"} />
+                    <meta property="og:image" content={"https://avatars.githubusercontent.com/u/61021780?v=4"} />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css" />
                 </Head>
                 <body>
