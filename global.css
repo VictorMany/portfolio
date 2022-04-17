@@ -61,13 +61,15 @@ div#__next>div {
 }
 
 .image-blurred-edge {
-    background-image: url('/foto.png');
+    background-image: url('/foto.svg');
     background-position: center;
     background-size: 200px;
     background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
     width: 200px;
-    height: 180px;
-    margin: -1rem;
+    height: 200px;
+    margin: -0.5rem;
     /* you need to match the shadow color to your background or image border for the desired effect*/
-    box-shadow: 0 0 8px 10px rgb(0, 0, 0) inset;
+    box-shadow: 0 0 8px 5px rgb(255, 255, 255) inset;
 }
