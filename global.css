@@ -71,5 +71,4 @@ div#__next>div {
     height: 200px;
     margin: -0.5rem;
     /* you need to match the shadow color to your background or image border for the desired effect*/
-    box-shadow: 0 0 8px 5px rgb(255, 255, 255) inset;
 }
