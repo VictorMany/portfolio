@@ -14,16 +14,16 @@ const saveFile = (ruta) => {
 
 const Index = () => {
 
-    const [englishMode, setEnglishMode] = useState(true)
-    const [Experiences, setExperiences] = useState(experiences);
-    const [Projects, setProjects] = useState(projects);
-    const [Courses, setCourses] = useState(cursos);
-    const [Languages, setLanguages] = useState(languages);
+    const [englishMode, setEnglishMode] = useState(false)
+    const [Experiences, setExperiences] = useState(ENexperiences);
+    const [Projects, setProjects] = useState(ENprojects);
+    const [Courses, setCourses] = useState(ENcursos);
+    const [Languages, setLanguages] = useState(ENlanguages);
 
     const changeMode = () => {
         setEnglishMode(!englishMode)
 
-        if (englishMode) {
+        if (!englishMode) {
             setExperiences(ENexperiences)
             setProjects(ENprojects)
             setCourses(ENcursos)
@@ -45,7 +45,7 @@ const Index = () => {
                 <div className="col-md-12 col-12">
                     <div className="form-check form-switch d-flex justify-content-end m-1 mb-2 ">
                         <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
-                        <label className="form-check-label ps-1"><strong>SP/EN</strong></label>
+                        <label className="form-check-label ps-1"><strong>EN/SP</strong></label>
                     </div>
                     <div className="card card-body bg-secondary bg-black text-light">
                         <div className="row">
@@ -55,7 +55,8 @@ const Index = () => {
                             <div className="col-md-8 col-12 ">
                                 <h1>Victor Manuel Fuentes</h1>
                                 <h3>Frontend Developer</h3>
-                                <p style={{ color: '#928F8C' }}>{englishMode ? 'Estudiante de Ingeniería de Software y Sistemas Computacionales en la Universidad de La Salle Bajío' : 'Student of Software Engineering and Computer Systems at the University De La Salle Bajío'}</p>
+                                <p style={{ color: '#928F8C' }}>{englishMode ? 'Soy ingeniero de software con preferencia en desarrollo frontend.' + ' Me gusta participar en todas las etapas de la creación de software de calidad y aprender de aquellos con más experiencia que pueden aportar algo a mi propio desarrollo profesional y personal.' :
+                                "I'm a software engineer with a preference in frontend development." + " I like to participate in all stages of the creation of quality software and learn from those with more experience who can contribute something to my own professional and personal development."}</p>
                                 <a style={{ color: '#5A97E2' }} href="https://www.linkedin.com/in/victor-manuel-velazquez-fuentes-bab088156/" target='_blank'>{englishMode ? 'Vee mi perfil de LinkedIn' : 'linkedin profile'}</a>
                             </div>
                         </div>
