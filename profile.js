@@ -24,6 +24,12 @@ export const skills = [{
 
 },
 {
+    skill: 'Nuxt JS',
+    percentage: 60,
+    image: 'logo/nuxt.svg'
+
+},
+{
     skill: 'React',
     percentage: 50,
     image: 'logo/react.svg'

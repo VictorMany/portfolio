@@ -54,7 +54,7 @@ const Index = () => {
                             </div>
                             <div className="col-md-8 col-12 ">
                                 <h1>Victor Manuel Fuentes</h1>
-                                <h3>Frontend Developer</h3>
+                                <h3>Software Engineer</h3>
                                 <p style={{ color: '#928F8C' }}>{englishMode ? 'Soy ingeniero de software con preferencia en desarrollo frontend.' + ' Me gusta participar en todas las etapas de la creación de software de calidad y aprender de aquellos con más experiencia que pueden aportar algo a mi propio desarrollo profesional y personal.' :
                                 "I'm a software engineer with a preference in frontend development." + " I like to participate in all stages of the creation of quality software and learn from those with more experience who can contribute something to my own professional and personal development."}</p>
                                 <a style={{ color: '#5A97E2' }} href="https://www.linkedin.com/in/victor-manuel-velazquez-fuentes-bab088156/" target='_blank'>{englishMode ? 'Vee mi perfil de LinkedIn' : 'linkedin profile'}</a>
