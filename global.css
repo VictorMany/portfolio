@@ -7,6 +7,15 @@
     height: auto;
 }
 
+.card {
+    border-radius: 0.6rem;
+    overflow: hidden;
+}
+
+.border-rounded {
+    border-radius: 0.6rem;
+}
+
 body,
 html,
 body>div:first-child,
@@ -22,6 +31,7 @@ div#__next>div {
 
 .card-img-top {
     height: 150px;
+    border-radius: 0.6rem;
     object-fit: cover;
 }
 

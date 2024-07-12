@@ -56,7 +56,7 @@ const Index = () => {
                                 <h1>Victor Manuel Fuentes</h1>
                                 <h3>Software Engineer</h3>
                                 <p style={{ color: '#928F8C' }}>{englishMode ? 'Soy ingeniero de software con preferencia en desarrollo frontend.' + ' Me gusta participar en todas las etapas de la creación de software de calidad y aprender de aquellos con más experiencia que pueden aportar algo a mi propio desarrollo profesional y personal.' :
-                                "I'm a software engineer with a preference in frontend development." + " I like to participate in all stages of the creation of quality software and learn from those with more experience who can contribute something to my own professional and personal development."}</p>
+                                    "I'm a software engineer with a preference in frontend development." + " I like to participate in all stages of the creation of quality software and learn from those with more experience who can contribute something to my own professional and personal development."}</p>
                                 <a style={{ color: '#5A97E2' }} href="https://www.linkedin.com/in/victor-manuel-velazquez-fuentes-bab088156/" target='_blank'>{englishMode ? 'Vee mi perfil de LinkedIn' : 'linkedin profile'}</a>
                             </div>
                         </div>
@@ -81,7 +81,7 @@ const Index = () => {
 
                                         <div className="col-12">
                                             <div className="row mb-1" >
-                                                <img src={`/${image}`} alt={skill} height={40} className="col-3" />
+                                                <img src={`/${image}`} alt={skill} height={40} className="border-rounded col-3" />
                                                 <p className="col mt-2">{skill}</p>
                                             </div>
                                             <div className="progress" style={{ height: 10 }}>
@@ -113,7 +113,7 @@ const Index = () => {
                                         <li key={index}>
                                             <h4 className="text-red">{title}</h4>
                                             <h5>
-                                                {from} {to ? `- ${to}` : `${!englishMode ? "- I currently work here" : " - Actualmente trabajo aquí" }`}
+                                                {from} {to ? `- ${to}` : `${!englishMode ? "- I currently work here" : " - Actualmente trabajo aquí"}`}
                                             </h5>
                                             <h6>
                                                 {where}
@@ -165,7 +165,8 @@ const Index = () => {
                                                                 <img
                                                                     src={image}
                                                                     alt={skill}
-                                                                    height='100%'
+                                                                    height={40}
+                                                                    className="border-rounded"
                                                                 />
 
                                                             </div>
@@ -222,7 +223,7 @@ const Index = () => {
                                             <div className="card-body">
                                                 <h3>{name}</h3>
                                                 <p className="pb-2">{description}</p>
-                                                <a href={link} target='_blank' className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1'>{englishMode ? 'Saber más' : 'Know more'}</a>
+                                                <a href={link} target='_blank' className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1 border-rounded'>{englishMode ? 'Saber más' : 'Know more'}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -251,13 +252,13 @@ const Index = () => {
                                 Courses.map(({ name, image, description, link }, i) => (
                                     <div className="col-md-4 p-2" key={i}>
                                         <div className="card h-100">
-                                            <div className="card-body">
+                                            <div className="card-body ">
                                                 <h3>{name}</h3>
                                                 <p>{description}</p>
 
                                                 <div className='mt-5'>
-                                                    <a href={link} className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1' target="_blank">{englishMode ? 'Ver certificado' : 'Proof of completion'}</a>
-                                                    <img className='position-absolute bottom-0 end-0 m-1' style={{ height: 50 }} src={`/${image}`} />
+                                                    <a href={link} className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1 border-rounded' target="_blank">{englishMode ? 'Ver certificado' : 'Proof of completion'}</a>
+                                                    <img className='position-absolute bottom-0 end-0 m-1 border-rounded' style={{ height: 40 }} src={`/${image}`} />
                                                 </div>
                                             </div>
                                         </div>

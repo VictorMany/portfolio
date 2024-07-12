@@ -115,10 +115,10 @@ export const ENexperiences = [{
 ]
 
 export const projects = [{
-    name: 'Preview link Vicvoc',
-    description: 'CRUD completo desarrollado con NextJS y MongoDB para guardar sitios web interesantes',
-    image: 'mongo.png',
-    link: 'https://vicvoc.vercel.app'
+    name: 'Biomedical Management Software',
+    description: 'Diseño UX/UI y desarrollo completo del frontend',
+    image: 'bms-project.png',
+    link: 'https://ledgerslegacy.com/bms/#features'
 }, {
     name: 'Aprendiendo Inglés',
     description: 'Aplicacion móvil y web para que los niños puedan aprender inglés básico desarrollada con Quasar framework',
@@ -130,7 +130,7 @@ export const projects = [{
     image: 'mat.png',
     link: 'https://victormany.github.io/servicio_becario_math_app/dist/spa/#/'
 }, {
-    name: 'BMS',
+    name: 'BMS Landing page',
     description: 'Página web estática de publicidad para software BMS desarrollada con HTML, CSS, Javascript y clases de Bootstrap',
     image: 'bms.png',
     link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
@@ -148,10 +148,10 @@ export const projects = [{
 ]
 
 export const ENprojects = [{
-    name: 'Preview link Vicvoc',
-    description: 'full CRUD built with Next JS and MongoDB to save interesting websites',
-    image: 'mongo.png',
-    link: 'https://vicvoc.vercel.app'
+    name: 'Biomedical Management Software (BMS)',
+    description: 'Design UX/UI and Frontend development',
+    image: 'bms-project.png',
+    link: 'https://ledgerslegacy.com/bms/#features'
 }, {
     name: 'Learning English',
     description: 'Mobile and web application for children to learn basic English developed with Quasar framework',
@@ -163,7 +163,7 @@ export const ENprojects = [{
     image: 'mat.png',
     link: 'https://victormany.github.io/servicio_becario_math_app/dist/spa/#/'
 }, {
-    name: 'BMS',
+    name: 'BMS Landing Page',
     description: 'Static advertising web page for BMS software built with CSS, Javascript, HTML and Bootstrap',
     image: 'bms.png',
     link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
