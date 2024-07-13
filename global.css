@@ -16,6 +16,11 @@
     border-radius: 0.6rem !important;
 }
 
+.small-btn {
+    padding: 0.5rem;
+    font-size: 15px;
+}
+
 body,
 html,
 body>div:first-child,
@@ -51,6 +56,10 @@ div#__next>div {
     max-height: 480px;
 }
 
+.bg-light {
+    box-shadow: none !important;
+}
+
 /* Estilos móvil/celular */
 @media all and (min-width: 701px) {
     .pad {
@@ -71,7 +80,7 @@ div#__next>div {
 }
 
 .image-blurred-edge {
-    background-image: url('/foto.svg');
+    background-image: url('/foto.jfif');
     background-position: center;
     background-size: 200px;
     background-repeat: no-repeat;

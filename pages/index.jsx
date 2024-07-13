@@ -23,7 +23,7 @@ const Index = () => {
     const changeMode = () => {
         setEnglishMode(!englishMode)
 
-        if (!englishMode) {
+        if (englishMode) {
             setExperiences(ENexperiences)
             setProjects(ENprojects)
             setCourses(ENcursos)
@@ -68,7 +68,7 @@ const Index = () => {
             {/**Second sesion */}
             < section className="row" >
                 <div className="col-md-4 py-2 col-12">
-                    <div className="card bg-light animate__animated animate__fadeInLeft h-100">
+                    <div className="card bg-light h-100">
                         <div className="card-body">
                             <h1>Skills</h1>
 
@@ -270,8 +270,9 @@ const Index = () => {
                 </div>
             </section>
 
-            <div className="bg-black p-2 d-grid d-md-flex justify-content-center mt-2" >
-                {englishMode ? <button className="btn bg-primary shadow-none text-white" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> : <button className="btn bg-primary shadow-none text-white" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
+            <div className="bg-black p-2 d-grid d-md-flex justify-content-center mt-2 border-rounded" >
+                {englishMode ? <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> : 
+                <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
             </div>
 
         </Layout >
