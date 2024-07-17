@@ -132,66 +132,76 @@ export const ENexperiences = [
 export const projects = [{
     name: 'Biomedical Management Software',
     description: 'Diseño UX/UI y desarrollo completo del frontend',
-    image: 'bms-project.png',
-    link: 'https://ledgerslegacy.com/bms/#features'
+    image: 'bms-img1',
+    link: 'https://ledgerslegacy.com/bms/#features',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 }, {
     name: 'Aprendiendo Inglés',
     description: 'Aplicacion móvil y web para que los niños puedan aprender inglés básico desarrollada con Quasar framework',
     image: 'le.png',
-    link: 'https://victormany.github.io/LearningEnglish/dist/spa/#/'
+    link: 'https://victormany.github.io/LearningEnglish/dist/spa/#/',
+    slides: ['/english-1.png', '/english-2.png', '/english-3.png']
 }, {
     name: 'Landing page',
     description: 'Desarrollo frontend de una Landing Page de ejemplo',
     image: 'landing.png',
-    link: 'https://landing-n\avy-two.vercel.app/'
+    link: 'https://landing-n\avy-two.vercel.app/',
+    slides: ['/l1.png', '/l2.png', '/l3.png']
 }, {
     name: 'BMS Landing page',
     description: 'Página web estática de publicidad para software BMS desarrollada con HTML, CSS, Javascript y clases de Bootstrap',
     image: 'bms.png',
-    link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
+    link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 }, {
     name: 'App de Notas',
     description: 'CRUD completo desarrollado con Angular JS y firebase',
     image: 'crud.png',
-    link: 'https://crud-angular-lovat.vercel.app/news/today'
+    link: 'https://crud-angular-lovat.vercel.app/news/today',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 }, {
     name: 'To do',
     description: 'Frontend desarrollado con Vue JS y Vuetify',
     image: 'notesvue.png',
-    link: 'https://to-do-beryl.vercel.app'
+    link: 'https://to-do-beryl.vercel.app',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 },
 ]
 
 export const ENprojects = [{
     name: 'Biomedical Management Software (BMS)',
     description: 'Design UX/UI and Frontend development',
-    image: 'bms-project.png',
-    link: 'https://ledgerslegacy.com/bms/#features'
+    link: 'https://ledgerslegacy.com/bms/#features',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 }, {
     name: 'Learning English',
     description: 'Mobile and web application for children to learn basic English developed with Quasar framework',
-    image: 'le.png',
-    link: 'https://victormany.github.io/LearningEnglish/dist/spa/#/'
+    link: 'https://victormany.github.io/LearningEnglish/dist/spa/#/',
+    slides: ['/english-1.png', '/english-2.png', '/english-3.png']
 }, {
     name: 'Landing page',
     description: 'Frontend development of a sample Landing Page',
     image: 'landing.png',
-    link: 'https://landing-navy-two.vercel.app/'
+    link: 'https://landing-navy-two.vercel.app/',
+    slides: ['/l1.png', '/l2.png', '/l3.png']
 }, {
     name: 'BMS Landing Page',
     description: 'Static advertising web page for BMS software built with CSS, Javascript, HTML and Bootstrap',
     image: 'bms.png',
-    link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact'
+    link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 }, {
     name: 'To do App',
     description: 'Complete CRUD developed with Angular JS and Firebase',
     image: 'crud.png',
-    link: 'https://crud-angular-lovat.vercel.app/news/today'
+    link: 'https://crud-angular-lovat.vercel.app/news/today',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 }, {
     name: 'To do App',
     description: 'Frontend developed with Vue JS and Vuetify',
     image: 'notesvue.png',
-    link: 'https://to-do-beryl.vercel.app'
+    link: 'https://to-do-beryl.vercel.app',
+    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
 },
 ]
 

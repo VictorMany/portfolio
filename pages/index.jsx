@@ -1,7 +1,10 @@
 import Layout from "../components/Layout";
+import Carousel from "../components/Carousel";
 import { experiences, skills, projects, cursos, tecnologies, ENexperiences, ENprojects, ENcursos, languages, ENlanguages } from "../profile";
 import { useState } from 'react'
 import { saveAs } from "file-saver";
+import { Button } from 'react-bootstrap';
+
 
 
 const saveFile = (ruta) => {
@@ -41,7 +44,7 @@ const Index = () => {
     return (
         <Layout>
             {/**Header card */}
-            < header className="row" >
+            <header className="row" >
                 <div className="col-md-12 col-12">
                     <div className="form-check form-switch d-flex justify-content-end m-1 mb-2 ">
                         <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
@@ -63,6 +66,7 @@ const Index = () => {
                     </div>
                 </div>
             </header >
+
 
 
             {/**Second sesion */}
@@ -212,13 +216,14 @@ const Index = () => {
                                 </h1>}
                             </div>
                             {
-                                Projects.map(({ name, image, description, link }, i) => (
+                                Projects.map(({ name, image, description, link, slides }, i) => (
                                     <div className="col-md-4 p-2 height-card" key={i}>
                                         <div className="card h-100">
                                             <div className="overflow">
-                                                {image ? (
-                                                    <img src={`/${image}`} alt="..." className="card-img-top" />) : <></>
-                                                }
+                                                {/* {image ? (
+                                                    // <img src={`/${image}`} alt="..." className="card-img-top" />) : <></>
+                                                } */}
+                                                <Carousel slides={slides} />
                                             </div>
                                             <div className="card-body">
                                                 <h3>{name}</h3>
@@ -271,8 +276,8 @@ const Index = () => {
             </section>
 
             <div className="bg-black p-2 d-grid d-md-flex justify-content-center mt-2 border-rounded" >
-                {englishMode ? <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> : 
-                <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
+                {englishMode ? <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> :
+                    <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
             </div>
 
         </Layout >
