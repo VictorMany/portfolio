@@ -152,19 +152,19 @@ export const projects = [{
     description: 'Página web estática de publicidad para software BMS desarrollada con HTML, CSS, Javascript y clases de Bootstrap',
     image: 'bms.png',
     link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact',
-    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
+    slides: ['/bmsl1.png', '/bmsl2.png', '/bmsl3.png']
 }, {
     name: 'App de Notas',
-    description: 'CRUD completo desarrollado con Angular JS y firebase',
+    description: 'Fullstack CRUD con Angular JS y firebase',
     image: 'crud.png',
     link: 'https://crud-angular-lovat.vercel.app/news/today',
-    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
+    slides: ['/bms-img2.png', '/bms-img1.png', '/bms-img3.png']
 }, {
     name: 'To do',
-    description: 'Frontend desarrollado con Vue JS y Vuetify',
+    description: 'Fullstack CRUD con Vue JS, Vuetify, MongoDB',
     image: 'notesvue.png',
     link: 'https://to-do-beryl.vercel.app',
-    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
+    slides: ['/todo1.png', '/todo2.png', '/todo3.png']
 },
 ]
 
@@ -189,19 +189,19 @@ export const ENprojects = [{
     description: 'Static advertising web page for BMS software built with CSS, Javascript, HTML and Bootstrap',
     image: 'bms.png',
     link: 'https://victormany.github.io/PracticaGeoVictorFuentes/practica1.html#contact',
-    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
+    slides: ['/bmsl2.png', '/bmsl1.png', '/bmsl3.png']
 }, {
     name: 'To do App',
-    description: 'Complete CRUD developed with Angular JS and Firebase',
+    description: 'Fullstack CRUD developed with Angular JS and Firebase',
     image: 'crud.png',
     link: 'https://crud-angular-lovat.vercel.app/news/today',
-    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
+    slides: ['/ang1.png', '/ang2.png', '/ang1.png']
 }, {
     name: 'To do App',
-    description: 'Frontend developed with Vue JS and Vuetify',
+    description: 'Fullstack CRUD developed with Vue JS, Vuetify, MongoDB',
     image: 'notesvue.png',
     link: 'https://to-do-beryl.vercel.app',
-    slides: ['/bms-img1.png', '/bms-img2.png', '/bms-img3.png']
+    slides: ['/todo1.png', '/todo2.png', '/todo3.png']
 },
 ]
 

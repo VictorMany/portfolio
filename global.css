@@ -58,6 +58,7 @@ div#__next>div {
 
 .bg-light {
     box-shadow: none !important;
+    border: none !important;
 }
 
 /* Estilos móvil/celular */
