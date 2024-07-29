@@ -3,15 +3,6 @@
     overflow: hidden;
 }
 
-.card-body {
-    height: auto;
-}
-
-.card {
-    border-radius: 0.6rem;
-    overflow: hidden;
-}
-
 .border-rounded {
     border-radius: 0.6rem !important;
 }
@@ -61,12 +52,33 @@ div#__next>div {
     border: none !important;
 }
 
+h3,
+h1 {
+    color: #428BFC !important;
+    /* Azul claro y suave */
+}
+
+h5 {
+    color: #43AEFA !important;
+}
+
+h6 {
+    color: #81b4d9 !important;
+}
+
+p {
+    color: #9ab4c7;
+}
+
+.p-dark {
+    color: rgba(226, 240, 255, 0.815) !important;
+}
+
 /* Estilos móvil/celular */
 @media all and (min-width: 701px) {
     .pad {
         padding-left: 0rem;
     }
-
 }
 
 @media all and (max-width: 701px) {
@@ -91,4 +103,31 @@ div#__next>div {
     height: 200px;
     margin: -0.5rem;
     /* you need to match the shadow color to your background or image border for the desired effect*/
+}
+
+.gradient {
+    background: linear-gradient(to right,
+            #428BFC,
+            #43AEFA) !important;
+    border: none !important;
+
+}
+
+.gradient2 {
+    background: linear-gradient(to right,
+            #428cfc1b,
+            #cceaff19) !important;
+}
+
+.card-body {
+    height: auto;
+    background-color: #fbfeff !important;
+}
+
+.card {
+    border-radius: 0.8rem !important;
+    overflow: hidden;
+    border: none !important;
+    background-color: #F7FBFE !important;
+    box-shadow: none !important;
 }

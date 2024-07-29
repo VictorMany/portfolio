@@ -16,7 +16,7 @@ const Layout = ({ children, footer = true, dark = false, nav = true }) => {
         }
     }, [])
     return (
-        <div className={dark ? 'bg-dark' : ''} >
+        <div className={dark ? 'bg-light' : ''} >
             <Navbar nav={nav} />
             <main className="container py-2 col-12 col-md-8">
                 {children}
@@ -34,13 +34,13 @@ const Layout = ({ children, footer = true, dark = false, nav = true }) => {
                             <div className="col-md-5 col-12 bg-light text-dark p-3" style={{ borderRadius: '0.5rem' }}>
                                 <div className="row">
                                     <h3>Contact me</h3>
-                                    
+
                                     <a href="mailto:victor.velazfuentez@gmail.com?subject=I saw your professional profile" target={'_blank'}>
                                         <div className="col d-flex justify-content-center align-items-center">
-                                            <img src="/mail.svg" alt='Mail' height={40}/>
+                                            <img src="/mail.svg" alt='Mail' height={40} />
                                             victor.velazfuentez@gmail.com
                                         </div>
-                                        </a>
+                                    </a>
                                 </div>
                             </div>
                         </div>

@@ -3,9 +3,6 @@ import Carousel from "../components/Carousel";
 import { experiences, skills, projects, cursos, tecnologies, ENexperiences, ENprojects, ENcursos, languages, ENlanguages } from "../profile";
 import { useState } from 'react'
 import { saveAs } from "file-saver";
-import { Button } from 'react-bootstrap';
-
-
 
 const saveFile = (ruta) => {
     saveAs(
@@ -50,17 +47,17 @@ const Index = () => {
                         <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
                         <label className="form-check-label ps-1"><strong>EN/SP</strong></label>
                     </div>
-                    <div className="card card-body bg-secondary bg-black text-light">
+                    <div className="card card-body gradient2 text-light">
                         <div className="row">
                             <div className="col-md-4 p-3 col-12 d-flex justify-content-center align-items-center">
                                 <div className="image-blurred-edge"></div>
                             </div>
                             <div className="col-md-8 col-12 ">
-                                <h1>Victor Manuel Fuentes</h1>
+                                <h1>Victor Manuel Fuentes </h1>
                                 <h3>Software Engineer</h3>
-                                <p style={{ color: '#928F8C' }}>{englishMode ? 'Soy ingeniero de software con preferencia en desarrollo frontend.' + ' Me gusta participar en todas las etapas de la creación de software de calidad y aprender de aquellos con más experiencia que pueden aportar algo a mi propio desarrollo profesional y personal.' :
+                                <p>{englishMode ? 'Soy ingeniero de software con preferencia en desarrollo frontend.' + ' Me gusta participar en todas las etapas de la creación de software de calidad y aprender de aquellos con más experiencia que pueden aportar algo a mi propio desarrollo profesional y personal.' :
                                     "I'm a software engineer with a preference in frontend development." + " I like to participate in all stages of the creation of quality software and learn from those with more experience who can contribute something to my own professional and personal development."}</p>
-                                <a style={{ color: '#5A97E2' }} href="https://www.linkedin.com/in/victor-manuel-velazquez-fuentes-bab088156/" target='_blank'>{englishMode ? 'Vee mi perfil de LinkedIn' : 'linkedin profile'}</a>
+                                <p><a href="https://www.linkedin.com/in/victor-manuel-velazquez-fuentes-bab088156/" target='_blank'>{englishMode ? 'Vee mi perfil de LinkedIn' : 'linkedin profile'}</a></p>
                             </div>
                         </div>
                     </div>
@@ -71,8 +68,8 @@ const Index = () => {
 
             {/**Second sesion */}
             < section className="row" >
-                <div className="col-md-4 py-2 col-12">
-                    <div className="card bg-light h-100">
+                <div className="col-md-4 py-4 col-12">
+                    <div className="card gradient2 h-100">
                         <div className="card-body">
                             <h3>Skills</h3>
 
@@ -103,9 +100,9 @@ const Index = () => {
                     </div>
                 </div>
 
-                <div className="col-md-8 py-2 col-12 pad">
+                <div className="col-md-8 py-4 col-12 pad">
                     {/* Experience */}
-                    <div className="card bg-light animate__animated animate__fadeInRight h-100" >
+                    <div className="card gradient2 animate__animated animate__fadeInRight h-100" >
                         <div className="card-body">
                             {englishMode ? <h3>Experiencia</h3> : <h3>Work Experience</h3>}
                             <ul className="pt-3">
@@ -150,7 +147,7 @@ const Index = () => {
             <section>
                 <div className="col-md-12 pb-2 col-12">
                     {/* Experience */}
-                    <div className="card bg-light animate__animated animate__fadeInRight h-100">
+                    <div className="card gradient2 animate__animated animate__fadeInRight h-100">
                         <div className="card-body">
                             {englishMode ? <h3>Otras tecnologías</h3> : <h3>Other technologies</h3>}
                             <div className="row">
@@ -204,7 +201,7 @@ const Index = () => {
 
             <section className="row">
                 <div className="col-md-12 col-12">
-                    <div className="card card-body bg-black">
+                    <div className="card card-body gradient2">
                         <div className="row">
                             <div className="col-md-12">
                                 {englishMode ? <h3 className="text-center text-light">
@@ -215,7 +212,7 @@ const Index = () => {
                             </div>
                             {
                                 Projects.map(({ name, image, description, link, slides }, i) => (
-                                    <div className="col-md-4 p-2 height-card" key={i}>
+                                    <div className="col-md-4 p-2 height-card" key={name}>
                                         <div className="card h-100">
                                             <div className="overflow">
                                                 {/* {image ? (
@@ -226,7 +223,7 @@ const Index = () => {
                                             <div className="card-body">
                                                 <h5>{name}</h5>
                                                 <p className="pb-2">{description}</p>
-                                                <a href={link} target='_blank' className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1 border-rounded'>{englishMode ? 'Saber más' : 'Know more'}</a>
+                                                <a href={link} target='_blank' className='position-absolute start-0 bottom-0 m-2 btn gradient text-light btn-sm pt-1 border-rounded'>{englishMode ? 'Saber más' : 'Know more'}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -242,12 +239,12 @@ const Index = () => {
 
             <section className="row mt-3">
                 <div className="col-md-12 col-12">
-                    <div className="card card-body bg-black">
+                    <div className="card card-body gradient2">
                         <div className="row">
                             <div className="col-md-12">
                                 {englishMode ? <h3 className="text-center text-light">
                                     Cursos
-                                </h3> : <h3 className="text-center text-light">
+                                </h3> : <h3 className="text-center">
                                     Courses
                                 </h3>}
                             </div>
@@ -259,7 +256,7 @@ const Index = () => {
                                                 <h5>{name}</h5>
                                                 <p>{description}</p>
                                                 <div className='mt-5'>
-                                                    <a href={link} className='position-absolute start-0 bottom-0 m-2 btn bg-white btn-sm pt-1 border-rounded' target="_blank">{englishMode ? 'Ver certificado' : 'Proof of completion'}</a>
+                                                    <a href={link} target='_blank' className='position-absolute start-0 bottom-0 m-2 btn gradient text-light btn-sm pt-1 border-rounded'>{englishMode ? 'Ver certificado' : 'Proof of completion'}</a>
                                                     <img className='position-absolute bottom-0 end-0 m-1 border-rounded' style={{ height: 40 }} src={`/${image}`} />
                                                 </div>
                                             </div>
@@ -272,9 +269,9 @@ const Index = () => {
                 </div>
             </section>
 
-            <div className="bg-black p-2 d-grid d-md-flex justify-content-center mt-2 border-rounded" >
-                {englishMode ? <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> :
-                    <button className="btn small-btn bg-primary shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
+            <div className="gradient2 p-2 d-grid d-md-flex justify-content-center mt-2 border-rounded" >
+                {englishMode ? <button className="btn small-btn gradient shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> :
+                    <button className="btn small-btn gradient shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
             </div>
 
         </Layout >

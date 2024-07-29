@@ -10,11 +10,11 @@ const Github = ({ user, statusCode }) => {
         <Layout footer={false} dark={true} nav={false}>
             <div className="row">
                 <div className="col-md-4 offset-md-4">
-                    <div className="card card-body text-center">
+                    <div className="card card-body gradient2 text-center">
                         <h3>{user.name}</h3>
                         <img src={user.avatar_url} />
                         <p>{user.bio}</p>
-                        <a href={user.html_url} target="_blank" className="btn btn-outline-secondary">Go to Github</a>
+                        <a href={user.html_url} target="_blank" className="btn btn-primary gradient">Go to Github</a>
                     </div>
                 </div>
             </div>
