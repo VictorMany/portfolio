@@ -43,7 +43,7 @@ const Index = () => {
             {/**Header card */}
             <header className="row" >
                 <div className="col-md-12 col-12">
-                    <div className="form-check form-switch d-flex justify-content-end m-1 mb-2 ">
+                    <div className="form-check form-switch d-flex justify-content-end m-1 mb-2">
                         <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
                         <label className="form-check-label ps-1"><strong>EN/SP</strong></label>
                     </div>
@@ -69,8 +69,8 @@ const Index = () => {
             {/**Second sesion */}
             < section className="row" >
                 <div className="col-md-4 py-4 col-12">
-                    <div className="card gradient2 h-100">
-                        <div className="card-body">
+                    <div className="card  h-100">
+                        <div className="card-body gradient2">
                             <h3>Skills</h3>
 
                             {/* Skill Progress  */}
@@ -102,8 +102,8 @@ const Index = () => {
 
                 <div className="col-md-8 py-4 col-12 pad">
                     {/* Experience */}
-                    <div className="card gradient2 animate__animated animate__fadeInRight h-100" >
-                        <div className="card-body">
+                    <div className="card animate__animated animate__fadeInRight h-100" >
+                        <div className="card-body gradient2">
                             {englishMode ? <h3>Experiencia</h3> : <h3>Work Experience</h3>}
                             <ul className="pt-3">
                                 {/* List Item Experience */}
@@ -145,10 +145,10 @@ const Index = () => {
             </section >
 
             <section>
-                <div className="col-md-12 pb-2 col-12">
+                <div className="col-md-12 pb-4 col-12">
                     {/* Experience */}
-                    <div className="card gradient2 animate__animated animate__fadeInRight h-100">
-                        <div className="card-body">
+                    <div className="card animate__animated animate__fadeInRight h-100">
+                        <div className="card-body gradient2">
                             {englishMode ? <h3>Otras tecnologías</h3> : <h3>Other technologies</h3>}
                             <div className="row">
 
@@ -204,9 +204,9 @@ const Index = () => {
                     <div className="card card-body gradient2">
                         <div className="row">
                             <div className="col-md-12">
-                                {englishMode ? <h3 className="text-center text-light">
+                                {englishMode ? <h3 className="text-center">
                                     Portafolio
-                                </h3> : <h3 className="text-center text-light">
+                                </h3> : <h3 className="text-center">
                                     Portfolio
                                 </h3>}
                             </div>
@@ -237,12 +237,12 @@ const Index = () => {
 
             {/**Fourth section */}
 
-            <section className="row mt-3">
+            <section className="row mt-4">
                 <div className="col-md-12 col-12">
                     <div className="card card-body gradient2">
                         <div className="row">
                             <div className="col-md-12">
-                                {englishMode ? <h3 className="text-center text-light">
+                                {englishMode ? <h3 className="text-center">
                                     Cursos
                                 </h3> : <h3 className="text-center">
                                     Courses
