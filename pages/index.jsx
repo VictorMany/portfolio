@@ -70,7 +70,7 @@ const Index = () => {
             < section className="row" >
                 <div className="col-md-4 py-4 col-12">
                     <div className="card  h-100">
-                        <div className="card-body gradient2">
+                        <div className="card-body blue2">
                             <h3>Skills</h3>
 
                             {/* Skill Progress  */}

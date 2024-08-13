@@ -119,6 +119,13 @@ p {
             #cceaff19) !important;
 }
 
+
+.blue2 {
+    background: linear-gradient(to right,
+            #428cfc1b,
+            #428cfc1b) !important;
+}
+
 .card-body {
     height: auto;
     background-color: #fbfeff !important;
