@@ -11,7 +11,6 @@ const saveFile = (ruta) => {
     );
 };
 
-
 const Index = () => {
 
     const [englishMode, setEnglishMode] = useState(false)
@@ -34,25 +33,28 @@ const Index = () => {
             setCourses(cursos)
             setLanguages(languages)
         }
-
     }
 
 
     return (
         <Layout>
             {/**Header card */}
-            <header className="row" >
-                <div className="col-md-12 col-12">
-                    <div className="form-check form-switch d-flex justify-content-end m-1 mb-2">
-                        <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
-                        <label className="form-check-label ps-1"><strong>EN/SP</strong></label>
-                    </div>
-                    <div className="card card-body gradient2 text-light">
+            <header className="col-md-12 col-12" >
+                <div className="form-check form-switch d-flex justify-content-end m-1 mb-2">
+                    <input className="form-check-input" type="checkbox" onClick={changeMode} role="switch" id="flexSwitchCheckDefault" />
+                    <label className="form-check-label ps-1"><strong>EN/SP</strong></label>
+                </div>
+            </header>
+
+            {/**Second sesion */}
+            <section>
+                <div className="row gradient top-section-padding">
+                    <div className="col-12 card text-light" >
                         <div className="row">
                             <div className="col-md-4 p-3 col-12 d-flex justify-content-center align-items-center">
                                 <div className="image-blurred-edge"></div>
                             </div>
-                            <div className="col-md-8 col-12 ">
+                            <div className="col-md-8 p-3 col-12 ">
                                 <h1>Victor Manuel Fuentes </h1>
                                 <h3>Software Engineer</h3>
                                 <p>{englishMode ? 'Soy ingeniero de software con preferencia en desarrollo frontend.' + ' Me gusta participar en todas las etapas de la creación de software de calidad y aprender de aquellos con más experiencia que pueden aportar algo a mi propio desarrollo profesional y personal.' :
@@ -61,49 +63,35 @@ const Index = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </header >
 
-
-
-            {/**Second sesion */}
-            < section className="row" >
-                <div className="col-md-4 py-4 col-12">
-                    <div className="card  h-100">
-                        <div className="card-body gradient2">
-                            <h3>Skills</h3>
-
-                            {/* Skill Progress  */}
-                            {
-                                //console.log(skills),
-                                skills.map(({ skill, percentage, image }, i) => (
-                                    <div className="py-3" key={i} >
-                                        <div className="col-12">
-                                            <div className="row mb-1" >
-                                                <img src={`/${image}`} alt={skill} height={40} className="border-rounded col-3" />
-                                                <p className="col mt-2">{skill}</p>
-                                            </div>
-                                            <div className="progress" style={{ height: 10 }}>
-                                                <div
-                                                    className="progress-bar"
-                                                    role="progressbar"
-                                                    style={{ width: `${percentage}%` }}
-                                                    aria-valuenow="50"
-                                                    aria-valuemin="0"
-                                                    aria-valuemax="100"
-                                                ></div>
-                                            </div>
+                    <div className="col-md-4 col-12 card py-3">
+                        {englishMode ? <h3>Habilidades</h3> : <h3>Skills</h3>}
+                        {
+                            skills.map(({ skill, percentage, image }, i) => (
+                                <div className="py-3" key={i} >
+                                    <div className="col-12">
+                                        <div className="row mb-1" >
+                                            <img src={`/${image}`} alt={skill} height={40} className="border-rounded col-3" />
+                                            <p className="col mt-2">{skill}</p>
+                                        </div>
+                                        <div className="progress" style={{ height: 10 }}>
+                                            <div
+                                                className="progress-bar"
+                                                role="progressbar"
+                                                style={{ width: `${percentage}%` }}
+                                                aria-valuenow="50"
+                                                aria-valuemin="0"
+                                                aria-valuemax="100"
+                                            ></div>
                                         </div>
                                     </div>
-                                ))}
-                        </div>
+                                </div>
+                            ))}
                     </div>
-                </div>
 
-                <div className="col-md-8 py-4 col-12 pad">
-                    {/* Experience */}
-                    <div className="card animate__animated animate__fadeInRight h-100" >
-                        <div className="card-body gradient2">
+                    <div className="col-md col-12 card py-3">
+                        {/* Experience */}
+                        <div className="h-100" >
                             {englishMode ? <h3>Experiencia</h3> : <h3>Work Experience</h3>}
                             <ul className="pt-3">
                                 {/* List Item Experience */}
@@ -142,12 +130,12 @@ const Index = () => {
                         </div>
                     </div>
                 </div>
-            </section >
+            </section>
 
             <section>
-                <div className="col-md-12 pb-4 col-12">
+                <div className="col-md-12 py-4 col-12">
                     {/* Experience */}
-                    <div className="card animate__animated animate__fadeInRight h-100">
+                    <div className="card h-100">
                         <div className="card-body gradient2">
                             {englishMode ? <h3>Otras tecnologías</h3> : <h3>Other technologies</h3>}
                             <div className="row">
@@ -171,9 +159,6 @@ const Index = () => {
                                                             </div>
                                                             <p className="col mt-2">{skill}</p>
                                                         </div>
-
-
-
                                                     </div>
                                                     <div className="progress" style={{ height: 10 }}>
                                                         <div
@@ -190,15 +175,12 @@ const Index = () => {
                                         </div>
                                     ))}
                             </div>
-
-
                         </div>
                     </div>
                 </div>
             </section>
 
             {/**Third section */}
-
             <section className="row">
                 <div className="col-md-12 col-12">
                     <div className="card card-body gradient2">
@@ -212,7 +194,7 @@ const Index = () => {
                             </div>
                             {
                                 Projects.map(({ name, image, description, link, slides }, i) => (
-                                    <div className="col-md-4 p-2 height-card" key={name}>
+                                    <div className="col-md-4 p-2 height-card" key={i}>
                                         <div className="card h-100">
                                             <div className="overflow">
                                                 {/* {image ? (
@@ -236,7 +218,6 @@ const Index = () => {
 
 
             {/**Fourth section */}
-
             <section className="row mt-4">
                 <div className="col-md-12 col-12">
                     <div className="card card-body gradient2">
@@ -269,7 +250,7 @@ const Index = () => {
                 </div>
             </section>
 
-            <div className="gradient2 p-2 d-grid d-md-flex justify-content-center mt-2 border-rounded" >
+            <div className="gradient2 p-2 d-grid d-md-flex justify-content-center my-4" >
                 {englishMode ? <button className="btn small-btn gradient shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-SP-Victor_Manuel_Velázquez_Fuentes.pdf')}>Descargar CV en PDF</button> :
                     <button className="btn small-btn gradient shadow-none text-white border-rounded" onClick={() => saveFile('cv/CV-EN-Victor_Manuel_Velázquez_Fuentes.pdf')}>Download CV</button>}
             </div>

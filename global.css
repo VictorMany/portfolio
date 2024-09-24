@@ -58,16 +58,13 @@ h1 {
     /* Azul claro y suave */
 }
 
-h5 {
-    color: #43AEFA !important;
-}
-
+h5,
 h6 {
-    color: #81b4d9 !important;
+    color: #00080d71 !important;
 }
 
 p {
-    color: #9ab4c7;
+    color: #00080d60;
 }
 
 .p-dark {
@@ -78,6 +75,11 @@ p {
 @media all and (min-width: 701px) {
     .pad {
         padding-left: 0rem;
+    }
+
+    .top-section-padding {
+        padding: 0px;
+        gap: 15px
     }
 }
 
@@ -90,6 +92,16 @@ p {
         height: 50%;
         overflow: hidden;
     }
+
+    .top-section-padding {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    section>.gradient {
+        background: none !important;
+    }
+
 }
 
 .image-blurred-edge {
@@ -108,9 +120,8 @@ p {
 .gradient {
     background: linear-gradient(to right,
             #428BFC,
-            #43AEFA) !important;
+            #00080d) !important;
     border: none !important;
-
 }
 
 .gradient2 {
@@ -120,12 +131,11 @@ p {
 }
 
 .card-body {
-    height: auto;
     background-color: #fbfeff !important;
 }
 
 .card {
-    border-radius: 0.8rem !important;
+    border-radius: 0rem !important;
     overflow: hidden;
     border: none !important;
     background-color: #F7FBFE !important;
