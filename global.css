@@ -35,14 +35,6 @@ div#__next>div {
     transform: scale(1.8);
 }
 
-#contenedor {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: red;
-}
-
 .height-card {
     max-height: 480px;
 }
@@ -55,7 +47,8 @@ div#__next>div {
 h3,
 h1 {
     /* color: #00080d !important; */
-    background: linear-gradient(45deg, #0a1d32b5, #428BFC);
+    background: linear-gradient(45deg, #010c19d5, #428BFC);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     /* Azul claro y suave */
@@ -72,6 +65,10 @@ p {
 
 .p-dark {
     color: rgba(226, 240, 255, 0.815) !important;
+}
+
+.h3-dark {
+    color: #428BFC !important;
 }
 
 /* Estilos móvil/celular */
