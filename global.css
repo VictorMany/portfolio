@@ -54,7 +54,10 @@ div#__next>div {
 
 h3,
 h1 {
-    color: #428BFC !important;
+    /* color: #00080d !important; */
+    background: linear-gradient(45deg, #0a1d32b5, #428BFC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     /* Azul claro y suave */
 }
 
